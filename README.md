@@ -17,7 +17,7 @@ generates replica data whose structure the code itself defines, so its scores sa
 | `--mode full` | Real H&M data from Kaggle | Not yet run |
 | `--mode spark` | Real H&M data, distributed ALS | Not yet run |
 
-The evaluation code (`recall_at_k`, `ndcg_at_k`, cold-start split) holds out the last week by time to avoid the
+The evaluation code (`recall_at_k`, `ndcg_at_k`, cold-start split) splits train, validation and test by date (the test window is the most recent 7+ days) to avoid the
 leakage a random split would cause. To produce real numbers: download the competition data, run `--mode full`, and
 commit the metrics file it writes.
 
