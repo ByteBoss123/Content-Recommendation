@@ -3,13 +3,12 @@
 H&M Hybrid Recommender System
 ==============================
 ALS (implicit feedback) + BERT item features + Neural Re-ranker
-Trained on H&M Personalized Fashion Recommendations dataset.
+Built for the H&M Personalized Fashion Recommendations dataset (Kaggle, --mode full).
 
 Results
 -------
-  Recall@10 (hybrid vs ALS-only)  : +22% lift
-  Recall@10 on unseen/cold items  : 19%  (BERT generalizing)
-  PySpark training time            : ~30 min on cluster (vs overnight single-node)
+  None recorded. Dev mode runs on generated replica data; no run on the real H&M data
+  has been logged, so no recall or timing figures are claimed. See README.md.
 
 Architecture
 ------------
